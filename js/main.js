@@ -26,6 +26,8 @@ new Vue({
      self.disksElement.forEach((item, i) => {
        if (item.genre.toLowerCase().includes(self.selected.toLowerCase())) {
          item.visible = true;
+       }else if (self.selected === "ALL GENRES") {
+         item.visible = true;
        }
        else {
          item.visible = false;
