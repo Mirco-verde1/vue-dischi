@@ -21,11 +21,13 @@ new Vue({
   methods:{
 
    searchingGenre:function(){
+
      const self = this;
      self.disksElement.forEach((item, i) => {
        if (item.genre.toLowerCase().includes(self.selected.toLowerCase())) {
          item.visible = true;
-       }else {
+       }
+       else {
          item.visible = false;
        }
      });
